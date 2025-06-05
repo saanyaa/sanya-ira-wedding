@@ -51,6 +51,10 @@
       background: #fff;
       padding: 30px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
     }
     .greeting {
       font-size: 20px;
@@ -131,16 +135,16 @@
       height: auto;
     }
     .photo-frame {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border: 3px solid #000;
       border-radius: 50% / 30%;
       overflow: hidden;
-      width: clamp(250px, 60%, 350px);
-      height: clamp(350px, 70vw, 480px);
-      margin-left: auto;
-      margin-right: auto;
+      width: clamp(250px, 60vw, 350px);
+      height: clamp(340px, 80vw, 470px);
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
     }
     .we-photo {
       width: 100%;
