@@ -135,14 +135,16 @@
     }
     .photo-frame {
       border: 3px solid #000;
-      border-radius: 50% / 30%;
+      border-radius: 50% / 35%;
       overflow: hidden;
-      width: 350px;          /* ← фиксированная ширина */
-      height: 600px;         /* ← фиксированная высота, как в макете */
+      width: 100%;
+      max-width: 350px;
+      aspect-ratio: 5 / 8;
       margin: 30px auto;
       display: flex;
       justify-content: center;
       align-items: center;
+      box-sizing: border-box;
     }
     .we-photo {
       width: 100%;
@@ -155,11 +157,6 @@
       height: 400px;
       border: none;
       margin-top: 20px;
-    }
-    @media (max-width: 400px) {
-      .photo-frame {
-        transform: scale(0.9);
-      }
     }
   </style>
 </head>
