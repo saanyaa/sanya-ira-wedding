@@ -13,6 +13,7 @@
       color: #000;
       text-align: center;
     }
+
     .block {
       padding: 40px 20px;
       max-width: 450px;
@@ -67,11 +68,19 @@
       display: block;
       margin: 0 auto;
     }
+
     .script-text {
       font-family: 'Great Vibes', cursive;
       font-size: 26px;
       margin: 20px 0 10px;
     }
+
+    .bigger-text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 40px;
+      margin: 20px 0 10px;
+    }
+    
     .palette {
       display: flex;
       justify-content: center;
@@ -153,6 +162,40 @@
       object-fit: cover;
       display: block;
     }
+
+    .locations {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .location-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .location-item {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+
+    .location-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+
+    .location-item p {
+      font-size: 14px;
+      color: #444;
+      margin: 0;
+    }
+
     iframe {
       width: 100%;
       height: 400px;
@@ -174,8 +217,12 @@
 
   <div class="block block2">
     <div class="block2-inner">
-      <div class="greeting">
+
+      <div class="bigger-text">
         Дорогие гости!<br>
+      </div>
+
+      <div class="greeting">
         Мы рады сообщить Вам, что 24.07.2025 состоится наша свадьба!<br>
         И мы ждём вас, нашим самых близких и любимых, на этом мероприятии
       </div>
@@ -207,6 +254,7 @@
   <div class="block block3">
     <div class="block3-inner">
       <h2>Свадебное расписание</h2>
+
       <div class="schedule">
         <div class="event">
           <div class="event-time">
@@ -219,6 +267,7 @@
             Выездная регистрация в Гостинице "Националь"
           </div>
         </div>
+
         <div class="event">
           <div class="event-time">
             14:30<br>
@@ -231,6 +280,21 @@
           </div>
         </div>
       </div>
+
+      <div class="locations">
+        <h2>Локации торжества</h2>
+        <div class="location-gallery">
+          <div class="location-item">
+            <img src="images/national.jpg" alt="Гостиница Националь">
+            <p>Гостиница «Националь» — выездная регистрация</p>
+          </div>
+          <div class="location-item">
+            <img src="images/pushkin.jpg" alt="Кафе Пушкинъ">
+            <p>Кафе «Пушкинъ» — банкет</p>
+          </div>
+        </div>
+      </div>
+
       <div class="map-container">
         <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.615766%2C55.757398&mode=search&oid=1020542995&ol=biz&z=17.52" allowfullscreen></iframe>
       </div>
